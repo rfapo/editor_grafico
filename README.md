@@ -1,6 +1,6 @@
-Editor Gráfico
+# Editor Gráfico
 
-Comandos:
+## Comandos:
 I M N
 Cria uma nova matriz MxN. Todos os pixels são brancos (O).
 
