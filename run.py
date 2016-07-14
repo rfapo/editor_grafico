@@ -14,13 +14,15 @@ def main():
     while True:
         option = raw_input("Comando: ")
         c = option.replace(' ', '')
-        if c[0].upper() in menu.keys():
-            menu[c[0].upper()](c[1::])
-        elif c[0].upper() == 'X':
-            print c[0].upper()
-            exit()
-        else:
-            print "Opção inválida!"
+        try:
+            if c[0].upper() in menu.keys():
+                menu[c[0].upper()](c[1::])
+            elif c[0].upper() == 'X':
+                break
+            else:
+                print "Opção inválida!"
+        except:
+            print "Entrada inválida!"
 
 if __name__ == "__main__":
     main()

@@ -71,8 +71,7 @@ class Matrix:
                     if (pixel[1] >= 0) and (pixel[1] < len(matrix)):
                         for dx in (-1, 0, 1):
                             for dy in (-1, 0, 1):
-                                if matrix[pixel[0]][pixel[1]] == matrix\
-                                [dx - pixel[0]][dy - pixel[1]]:
+                                if matrix[pixel[0]][pixel[1]] == matrix[dx - pixel[0]][dy - pixel[1]]:
                                     region.append(pixel)
                                     stack.append((dx + pixel[0], dy + pixel[1]))
         matrix[self.X][self.Y] = self.C
