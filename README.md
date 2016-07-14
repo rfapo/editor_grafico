@@ -1,5 +1,9 @@
 # Editor Gráfico
 
+## Para executar:
+
+$python run.py
+
 ## Comandos:
 I M N
 Cria uma nova matriz MxN. Todos os pixels são brancos (O).
